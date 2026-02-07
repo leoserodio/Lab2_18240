@@ -6,10 +6,9 @@
     3'b011 -> 3  (triangle)
     3'b101 -> 5  (pentagon)
 \******                           ******/
-module coin_value (
-  input  logic [2:0] coin,
-  output logic [3:0] val
-);
+module coin_value 
+    (input  logic [2:0] coin,
+     output logic [3:0] val);
   always_comb begin
     case (coin)
       3'b000: val = 4'd0;
